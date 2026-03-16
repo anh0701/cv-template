@@ -1,0 +1,13 @@
+*
+
+!.gitignore
+
+!ex1.tex
+!ex2.tex
+!run.sh
+
+!build/
+!build/.gitkeep
+
+!web/
+!web/*

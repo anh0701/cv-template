@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif; 
+    background-color: #f0f0f0;
+    color: #000;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cv-container {
+    width: 210mm; 
+    min-height: 297mm;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20mm;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    font-size: 24px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+h2 {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+    border-bottom: 1px solid #000; 
+    padding-bottom: 2px;
+}
+
+.entry {
+    margin: 10px 0;
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: bold; 
+}
+
+hr.separator {
+    border: none;
+    height: 1px;
+    background-color: #e0e0e0; 
+    transform: scaleY(0.3); 
+    width: 95%;
+    margin: 15px auto;
+}
+
+.sub-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    font-size: 13px; 
+    margin-bottom: 2px;
+    text-align: justify;
+}
+
+
+.skills-section p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.skills-content p {
+    font-size: 13px; 
+    margin-bottom: 5px;
+    line-height: 1.4;
+    color: #000;
+}
+
+.skills-content strong {
+    font-weight: bold;
+}
+
+.objective-content p {
+    font-size: 13px; 
+    text-align: justify; 
+    margin-top: 8px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+hr {
+    border: 0;
+    border-top: 0.5px solid #000; 
+    margin-bottom: 8px;
+}
+
+@media print {
+    body { background: none; }
+    .cv-container { margin: 0; box-shadow: none; width: 100%; }
+}
