@@ -6,9 +6,14 @@
 !ex2.tex
 !run.sh
 !ex-cv-avatar.tex
+!avatar.png
+!readme.md
 
 !build/
 !build/.gitkeep
 
 !web/
 !web/*
+
+!overview/
+!overview/**
