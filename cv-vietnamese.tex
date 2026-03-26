@@ -1,0 +1,44 @@
+% !TEX recipe = latexmk (xelatex)
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+% Style cho moderncv
+\moderncvstyle{classic} 
+\moderncvcolor{blue} 
+
+% --- CẤU HÌNH TIẾNG VIỆT CHO XELATEX ---
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel} 
+
+\usepackage[scale=0.75]{geometry}
+
+% Thông tin cá nhân
+\name{Nguyễn}{Văn A}
+\title{Lập trình viên Fullstack}
+\address{Số 1 Đại Cồ Việt}{Quận Hai Bà Trưng, Hà Nội}
+\phone[mobile]{090.123.4567}
+\email{nguyenvana@email.com}
+\social[linkedin]{linkedin.com/in/nguyenvana}
+
+\begin{document}
+\makecvtitle
+
+\section{Mục tiêu nghề nghiệp}
+\cvitem{}{Mong muốn áp dụng kỹ năng giải quyết vấn đề và tư duy logic để xây dựng các sản phẩm phần mềm chất lượng cao, đồng thời học hỏi thêm về kiến trúc hệ thống.}
+
+\section{Kinh nghiệm làm việc}
+\cventry{2024--Hiện tại}{Lập trình viên Senior}{Công ty Công nghệ XYZ}{Hà Nội}{}
+{
+\begin{itemize}
+    \item Phát triển hệ thống quản lý kho vận bằng React và Node.js.
+    \item Tối ưu hóa truy vấn SQL giúp giảm thời gian phản hồi hệ thống xuống 30%.
+\end{itemize}
+}
+
+\section{Học vấn}
+\cventry{2020--2024}{Cử nhân Công nghệ thông tin}{Đại học Bách Khoa}{Hà Nội}{}{}
+
+\section{Kỹ năng}
+\cvitem{Ngôn ngữ}{Java, JavaScript, Python, C++}
+\cvitem{Công cụ}{Docker, Git, AWS, LaTeX}
+
+\end{document}
