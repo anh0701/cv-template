@@ -1,0 +1,74 @@
+% !TEX recipe = latexmk (xelatex)
+\documentclass[11pt,a4paper]{article}
+
+% --- CẤU HÌNH TIẾNG VIỆT & FONT ---
+\usepackage[utf8]{inputenc}
+\usepackage[vietnamese]{babel}
+\usepackage{setspace}
+
+% --- CẤU HÌNH LỀ ---
+\usepackage[margin=0.75in]{geometry}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+
+% Tùy chỉnh danh sách để sát nhau (đúng chuẩn Harvard)
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em}
+
+% Định nghĩa các lệnh định dạng
+\newcommand{\name}[1]{{\huge \bfseries \centerline{#1} \vspace{4pt}}}
+\newcommand{\contact}[1]{{\centerline{#1} \vspace{10pt}}}
+\newcommand{\sectiontitle}[1]{{\vspace{8pt} \bfseries \MakeUppercase{#1} \hrule \vspace{4pt}}}
+\newcommand{\entry}[4]{
+  \noindent \textbf{#1} \hfill #2 \\
+  \noindent \textit{#3} \hfill \textit{#4} \vspace{2pt}
+}
+
+\begin{document}
+\pagestyle{empty}
+
+% --- THÔNG TIN CÁ NHÂN ---
+\name{NGUYỄN VĂN A}
+\contact{Hà Nội, Việt Nam | 090.123.4567 | \href{mailto:email@address.com}{email@address.com} | \href{https://linkedin.com/in/yourprofile}{linkedin.com/in/username}}
+
+% --- HỌC VẤN ---
+\sectiontitle{Học vấn}
+\entry{Đại học Bách Khoa Hà Nội}{Hà Nội, Việt Nam}{Kỹ sư Công nghệ Thông tin}{09/2020 -- 06/2024}
+\begin{itemize}
+    \item GPA: 3.6/4.0. Giải Nhì cuộc thi lập trình cấp trường năm 2023.
+    \item Môn học tiêu biểu: Cấu trúc dữ liệu và giải thuật, Hệ quản trị CSDL, Mạng máy tính.
+\end{itemize}
+
+% --- KINH NGHIỆM LÀM VIỆC ---
+\sectiontitle{Kinh nghiệm làm việc}
+\entry{Công ty Công nghệ XYZ}{Hà Nội, Việt Nam}{Lập trình viên Backend (Java)}{02/2026 -- Hiện tại}
+\begin{itemize}
+    \item Phát triển hệ thống quản lý điều hành (MES Dispatching Board) sử dụng Spring Boot và Oracle SQL.
+    \item Tối ưu hóa các Stored Procedure giúp giảm thời gian truy vấn dữ liệu báo cáo xuống 40%.
+    \item Phối hợp với đội ngũ Frontend (React/TypeScript) để tích hợp các API thời gian thực.
+\end{itemize}
+
+\vspace{6pt}
+
+\entry{Vietnam Posts and Telecommunications Group (VNPT)}{Hà Nội, Việt Nam}{Thực tập sinh Lập trình Java}{09/2024 -- 09/2025}
+\begin{itemize}
+    \item Tham gia bảo trì hệ thống backend cho các dịch vụ viễn thông hiện có.
+    \item Xây dựng các module nhỏ hỗ trợ việc tự động hóa kiểm thử đơn vị (Unit Test).
+\end{itemize}
+
+% --- DỰ ÁN CÁ NHÂN ---
+\sectiontitle{Dự án nổi bật}
+\entry{Screen Recorder for Linux}{GitHub}{Dự án mã nguồn mở}{10/2025 -- 03/2026}
+\begin{itemize}
+    \item Xây dựng ứng dụng ghi màn hình thời gian thực sử dụng Python, X11 và FFmpeg.
+    \item Tối ưu hóa việc sử dụng CPU bằng cách tận dụng tăng tốc phần cứng (Hardware Acceleration).
+\end{itemize}
+
+% --- KỸ NĂNG & INTERESTS ---
+\sectiontitle{Kỹ năng \& Thông tin thêm}
+\begin{itemize}
+    \item \textbf{Ngôn ngữ lập trình:} Java (Spring Boot), SQL (Oracle, MySQL), TypeScript (React), Python.
+    \item \textbf{Công cụ \& Công nghệ:} Docker, Git, Linux, LaTeX (XeLaTeX), RESTful API.
+    \item \textbf{Ngoại ngữ:} Tiếng Anh (Giao tiếp tốt, đọc hiểu tài liệu kỹ thuật).
+\end{itemize}
+
+\end{document}
