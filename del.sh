@@ -1,3 +1,3 @@
 #!/bin/bash
 
-find build/ -type f -not -name '.gitkeep' -delete
+find . -path '*/build/*' -type f ! -name '.gitkeep' -delete
