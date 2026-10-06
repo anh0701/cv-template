@@ -1,15 +1,60 @@
-\documentclass[11pt]{article}
-\usepackage{graphicx} % Required for inserting images
-\usepackage{tikz}
-\setlength{\parindent}{0pt}
-\usepackage{hyperref}
-\usepackage{enumitem}
-\usepackage[utf8]{inputenc} 
-\usepackage[T1]{fontenc}
-\usepackage[brazil]{babel}
-\usepackage{lipsum}
-\usepackage[left=1.06cm,top=1.7cm,right=1.06cm,bottom=0.49cm]{geometry}
+\documentclass[10pt,a4paper]{article}
 
+% Encoding & Font
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel} 
+\usepackage{XCharter}
+
+% Layout
+\usepackage[
+    left=1.3cm,
+    right=1.3cm,
+    top=1.4cm,
+    bottom=1.4cm
+]{geometry}
+
+% Graphics
+\usepackage{graphicx}
+\usepackage{tikz}
+
+% Links
+\usepackage[hidelinks]{hyperref}
+
+% Lists
+\usepackage{enumitem}
+
+% Better spacing
+\usepackage{parskip}
+\setlist[itemize]{
+    leftmargin=*,
+    itemsep=2pt,
+    topsep=2pt,
+    parsep=0pt
+}
+
+% section
+\usepackage{titlesec}
+\titleformat{\section}
+{\large\bfseries}
+{}
+{0em}
+{}
+
+\titlespacing*{\section}
+{0pt}{10pt}{4pt}
+
+% Better typography
+\usepackage{microtype}
+
+% No page numbers
+\pagestyle{empty}
+
+% No paragraph indentation
+\setlength{\parindent}{0pt}
+
+\setlength{\parskip}{3pt}
+\renewcommand{\baselinestretch}{1.05}
 
 \begin{document}
 
@@ -26,7 +71,7 @@
 \hfill
 \begin{minipage}{0.65\textwidth}
 \raggedright
-{\huge\bfseries Firstname Lastname}
+{\LARGE\bfseries FIRSTNAME LASTNAME}
 \vspace{2pt}
 
 {\large\color{gray} DevOps Engineer}
